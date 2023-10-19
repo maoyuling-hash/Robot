@@ -1,0 +1,86 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  basicTimeStep 50
+  contactProperties [
+    ContactProperties {
+    }
+    ContactProperties {
+      material1 "Exterior WheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation 0.965 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.5999343946653792 0.01200028797436617 -0.7999591959506542 0.0499987999355932
+  position 0.11555892906719141 0.6493290398496732 15.347987016294045
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 1 0 0 1.57
+  floorSize 5 5
+  wallHeight 0.5
+}
+Wall {
+  translation 0.75 1 0
+  rotation 1.6952594753969508e-09 0.707104781184338 0.7071087811831002 -3.1415853071795863
+  name "wall1"
+  size 3.5 0.5 0.1
+}
+Wall {
+  translation -0.75 -1 0
+  rotation 1 0 0 1.5708
+  name "wall2"
+  size 3.5 0.5 0.1
+}
+E-puck {
+  hidden position_0_0 1229.7198104724876
+  hidden position_0_1 1769.6883010996553
+  hidden rotation_1 1 0 0 5.117654433171985
+  hidden rotation_2 1 0 0 5.688123596131161
+  translation 2.25157 2.24826 0.00159859
+  rotation -0.7529586429190218 0.46551045166284816 0.465137938085248 -1.850040351830602
+  controller "newcontroller"
+  groundSensorsSlot [
+    InertialUnit {
+      rotation 0.6109910236264123 -0.6301750243682385 0.4791340185276337 2.25044
+      resolution 1e-05
+    }
+    GPS {
+      scale 0.01 0.01 0.01
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+    }
+    GPS {
+      translation 0 0 0.5
+      scale 0.01 0.01 0.01
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+      name "gps1"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.9989787252474716 -0.008116880756962753 -0.044447978016032896 0.361611320353357
+  position -0.34896270759062076 -3.8117849353307967 11.482376624703964
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 1 0 0 1.57
+  floorSize 4.5 6
+  wallHeight 0.5
+}
+Wall {
+  translation 1.75 1.5 0
+  rotation 1 0 0 1.5708
+  size 1 0.5 0.1
+}
+Wall {
+  translation 0 1.5 0
+  rotation 1 0 0 1.5708
+  name "wall(1)"
+  size 1.5 0.5 0.1
+}
+Wall {
+  translation 0.75 2 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(2)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation -1.75 1.5 0
+  rotation 1 0 0 1.5708
+  name "wall(3)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation -1.25 2 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(4)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation 0 2.5 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(5)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation 1.25 0 0
+  rotation 1 0 0 1.5708
+  name "wall(6)"
+  size 2 0.5 0.1
+}
+Wall {
+  translation -0.75 0.75 0
+  rotation 1 0 0 1.5708
+  name "wall(7)"
+  size 2 0.5 0.1
+}
+Wall {
+  translation 0.25 -0.25 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(8)"
+  size 2 0.5 0.1
+}
+Wall {
+  translation -1.75 -0.25 0
+  rotation 1 0 0 1.5708
+  name "wall(9)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation 1.25 -0.75 0
+  rotation 1 0 0 1.5708
+  name "wall(10)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation -0.5 -1.25 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(11)"
+  size 2 0.5 0.1
+}
+Wall {
+  translation 1.775 -1.5 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(12)"
+  size 1.5 0.5 0.1
+}
+E-puck {
+  hidden position_0_0 3437.6418452557546
+  hidden position_0_1 5094.26061140715
+  hidden rotation_1 0.9999999999999999 0 0 5.543703078658829
+  hidden rotation_2 -1 0 0 4.880512591684508
+  translation 2 2.6 -0.00191772
+  rotation -0.5697274103004747 -0.5806222256049376 -0.5816257465809809 -2.103003829386652
+  controller "newcontroller"
+  groundSensorsSlot [
+    InertialUnit {
+      rotation -0.5665891256077238 0.5866361300519648 -0.5786491282813181 -2.090905307179586
+      resolution 1e-05
+    }
+    GPS {
+      scale 0.01 0.01 0.01
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+    }
+    GPS {
+      translation 0 0 0.5
+      scale 0.01 0.01 0.01
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+      name "gps1"
+    }
+  ]
+}
+Wall {
+  translation 1 -1.75 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(13)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation 0.225 -2.25 0
+  rotation 1 0 0 1.5708
+  name "wall(14)"
+  size 1.5 0.5 0.1
+}
+Wall {
+  translation -1 -1 0
+  rotation 1 0 0 1.5708
+  name "wall(15)"
+  size 1 0.5 0.1
+}
+Wall {
+  translation -1.5 -1.5 0
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(16)"
+  size 1 0.5 0.1
+}
